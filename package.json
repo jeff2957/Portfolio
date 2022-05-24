@@ -12,15 +12,19 @@
     "drei": "^1.5.3",
     "glsl-noise": "0.0.0",
     "glslify": "^7.1.1",
+    "i": "^0.3.7",
     "lerp": "^1.0.3",
-    "node-sass": "^4.14.1",
+    "node-sass": "npm:sass@^1.52.1",
+    "npm": "^8.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-intersection-observer": "^8.28.5",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "3.4.3",
     "react-spring": "^8.0.27",
     "react-three-fiber": "^4.2.21",
-    "three": "^0.120.1"
+    "three": "^0.120.1",
+    "typewriter-effect": "^2.18.2"
   },
   "scripts": {
     "start": "react-scripts start",
