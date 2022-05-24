@@ -1,3 +1,8 @@
+My Portfolio website made with react-three-fiber and blender(3d modeling).
+
+https://www.youtube.com/watch?v=vMpIgGU6A94
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
