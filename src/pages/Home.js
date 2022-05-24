@@ -1,5 +1,4 @@
 import React, { Suspense, useEffect, useRef } from "react";
-import "./Home.scss";
 //Components
 import Header from "./components/header";
 import { Section } from "./components/section"
@@ -62,16 +61,16 @@ const HTMLContent = ({ bgColor, domContent, children, modalPath, position, scale
   );
 };
 
-const Scene = () => {
-  return (
-    <>
-    <mesh className="box" position={[0,250, 10]}>
-      <planeBufferGeometry args={[3,5]} />
-      <meshStandardMaterial color='black' />
-    </mesh>
-    </>
-  )
-}
+// const Scene = () => {
+//   return (
+//     <>
+//     <mesh className="box" position={[0,250, 10]}>
+//       <planeBufferGeometry args={[3,5]} />
+//       <meshStandardMaterial color='black' />
+//     </mesh>
+//     </>
+//   )
+// }
 
 export default function App() {
   const domContent = useRef();
@@ -105,14 +104,14 @@ export default function App() {
             position={[0,0,0]} scale={1} bgColor='#ffbe0b'>
             <div className="VertContainer">
             <h1 className="title">Music Work</h1>
-            <a href='https://soundcloud.com/jeff-jeff-619662162' target='_blank' className="subText custLink">view all works</a>
+            <a href='https://soundcloud.com/jeff-jeff-619662162' target='_blank' rel="noopener noreferrer" className="subText custLink">view all works</a>
             </div>
           </HTMLContent>
           <HTMLContent domContent={domContent} modalPath={'/programmingIcon.gltf'}
             position={[0,-250,0]} scale={1} bgColor={'#B4F8C8'}>
             <div className="VertContainer">
             <h1 className="title">App</h1>
-            <a href='https://github.com/jeff2957?tab=repositories' target='_blank' className="subText custLink">view all works</a>
+            <a href='https://github.com/jeff2957?tab=repositories' target='_blank' rel="noopener noreferrer" className="subText custLink">view all works</a>
             </div>
           </HTMLContent>
           <HTMLContent domContent={domContent} modalPath={'/drawPen.gltf'}

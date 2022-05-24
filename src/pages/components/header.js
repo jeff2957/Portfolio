@@ -20,7 +20,7 @@ export default function Header() {
               <a href='/Visual'>Visual</a>
             </li> */}
             <li className='btn'>
-              <a href='https://www.linkedin.com/in/yen-fu-lu-593347178/' target='_blank'>Contact</a>
+              <a href='https://www.linkedin.com/in/yen-fu-lu-593347178/' target='_blank' rel="noopener noreferrer">Contact</a>
             </li>
           </ul>
         </nav>

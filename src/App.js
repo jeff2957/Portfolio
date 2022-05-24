@@ -128,7 +128,6 @@ import About from "./pages/About";
 import Music from "./pages/Music";
 import Code from "./pages/Code";
 import Visual from "./pages/Visual";
-import ErrorPage from "./pages/ErrorPage";
 
 
 
@@ -144,10 +143,10 @@ function App() {
     </nav> */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/music" element={<Music />} />
-        <Route path="/visual" element={<Visual />} />
-        <Route path="/code" element={<Code />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/Music" element={<Music />} />
+        <Route path="/Visual" element={<Visual />} />
+        <Route path="/Code" element={<Code />} />
         {/* <Route path="*" element={<ErrorPage />} /> */}
       </Routes>
     </Router>
