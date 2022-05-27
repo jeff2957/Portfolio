@@ -1,6 +1,13 @@
+# Personal Portfolio
+
 My Portfolio website made with react-three-fiber and blender(3d modeling).
 
-live demo: https://www.youtube.com/watch?v=vMpIgGU6A94
+See demo here: https://portfolio-nblcd7roi-jeff2957.vercel.app
+
+See demo video here: https://www.youtube.com/watch?v=vMpIgGU6A94
+
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
