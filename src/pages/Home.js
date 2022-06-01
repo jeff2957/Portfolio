@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 //Components
 import Header from "./components/header";
 import { Section } from "./components/section"
@@ -14,8 +14,9 @@ import { useInView } from "react-intersection-observer";
 //typewritter-effect
 import Typewriter from "typewriter-effect";
 
-//shader
-// import glsl from 'babel-plugin-glsl/marco'
+//button page transition animation
+import style from './Home.scss'
+
 
 const Model = ({ modalPath }) => {
   const gltf = useGLTFLoader(modalPath, true);
@@ -61,26 +62,17 @@ const HTMLContent = ({ bgColor, domContent, children, modalPath, position, scale
   );
 };
 
-// const Scene = () => {
-//   return (
-//     <>
-//     <mesh className="box" position={[0,250, 10]}>
-//       <planeBufferGeometry args={[3,5]} />
-//       <meshStandardMaterial color='black' />
-//     </mesh>
-//     </>
-//   )
-// }
-
 export default function App() {
   const domContent = useRef();
   const scrollArea = useRef();
   const onScroll = (e) => (state.top.current = e.target.scrollTop);
   useEffect(() => void onScroll({ target: scrollArea.current }), []);
 
+  const transition = { duration: 0.6, ease: [0.6, 0.01, -0.05, 0.9]};
+
   return ( 
     <>
-      <Header />
+      <Header className={style}/>
       <Canvas colorManagement camera={{ position: [0, 0, 120], fov: 70 }}>
         <Lights />
         <Suspense fallback={null}>
@@ -104,7 +96,7 @@ export default function App() {
             position={[0,0,0]} scale={1} bgColor='#ffbe0b'>
             <div className="VertContainer">
             <h1 className="title">Music Work</h1>
-            <a href='https://soundcloud.com/jeff-jeff-619662162' target='_blank' rel="noopener noreferrer" className="subText custLink">view all works</a>
+            <a href='/Music' rel="noopener noreferrer" className="lineBtn">View</a>
             </div>
           </HTMLContent>
           <HTMLContent domContent={domContent} modalPath={'/programmingIcon.gltf'}

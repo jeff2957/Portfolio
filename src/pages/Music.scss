@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    // background: #f15946;
+    background-color: black;
+    transition: 0.4s ease-in-out;
+  }
+  
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    // position: fixed;
+    overflow: hidden;
+    // text-decoration-color: aliceblue;
+  }
+
+  // h1{
+  //   color:whitesmoke;
+  //   margin: 0;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   z-index: 1;
+  //   font-size: 4rem;
+  //   letter-spacing: 0.05em;
+  //   white-space: nowrap;
+  // }
+
+  .audioPlayer{
+    color:whitesmoke;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    border: none;
+    background-color: transparent;
+    font-weight: 800;
+  }
