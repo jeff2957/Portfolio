@@ -3,7 +3,8 @@ import React, { Suspense, useEffect, useRef, useState } from "react";
 import Header from "./components/header";
 import { Section } from "./components/section"
 import { Canvas, useFrame } from "react-three-fiber"
-import { Html, useGLTFLoader } from "drei"
+import { HTML, Html, useGLTFLoader } from "drei"
+import LoadingPage from "./LoadingPage";
 
 //page state
 import state from "./components/state";
@@ -75,7 +76,7 @@ export default function App() {
       <Header className={style}/>
       <Canvas colorManagement camera={{ position: [0, 0, 120], fov: 70 }}>
         <Lights />
-        <Suspense fallback={null}>
+        <Suspense fallback={ <LoadingPage />}>
         <HTMLContent domContent={domContent} modalPath={'/introModel.gltf'}
             position={[0,250,0]} scale={1} bgColor='#FBE7C6'>
             <span>
