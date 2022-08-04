@@ -95,22 +95,22 @@ export default function App() {
           <HTMLContent domContent={domContent} modalPath={'/cassette.gltf'}
             position={[0,0,0]} scale={1} bgColor='#ffbe0b'>
             <div className="VertContainer">
-            <h1 className="title">Music Work</h1>
+            <h1 className="title">Music</h1>
             <a href='/Music' rel="noopener noreferrer" className="lineBtn">View</a>
             </div>
           </HTMLContent>
           <HTMLContent domContent={domContent} modalPath={'/programmingIcon.gltf'}
             position={[0,-250,0]} scale={1} bgColor={'#B4F8C8'}>
             <div className="VertContainer">
-            <h1 className="title">App</h1>
-            <a href='https://github.com/jeff2957?tab=repositories' target='_blank' rel="noopener noreferrer" className="subText custLink">view all works</a>
+            <h1 className="title">Code</h1>
+            <a href='https://github.com/jeff2957?tab=repositories' target='_blank' rel="noopener noreferrer" className="lineBtn">View</a>
             </div>
           </HTMLContent>
           <HTMLContent domContent={domContent} modalPath={'/drawPen.gltf'}
             position={[0,-500,0]} scale={1} bgColor={'#A0E7E5'}>
             <div className="VertContainer">
             <h1 className="title">Visual Design</h1>
-            <a href='/' className="subText custLink">view all works</a>
+            <a href='https://www.behance.net/f4fdb9ac' className="lineBtn">View</a>
             </div>
           </HTMLContent>
         </Suspense>
