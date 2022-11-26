@@ -2,7 +2,7 @@
 
 My Portfolio website made with react-three-fiber and blender(3d modeling).
 
-See demo here: https://portfolio-nblcd7roi-jeff2957.vercel.app
+See live demo here: https://portfolio-nblcd7roi-jeff2957.vercel.app
 
 See demo video here: https://www.youtube.com/watch?v=vMpIgGU6A94
 
