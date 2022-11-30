@@ -4,7 +4,7 @@ import Header from "./components/header";
 import { Section } from "./components/section"
 import { Canvas, useFrame } from "react-three-fiber"
 import { HTML, Html, useGLTFLoader } from "drei"
-import LoadingPage from "./LoadingPage";
+// import LocomotiveScroll from "locomotive-scroll";
 
 //page state
 import state from "./components/state";
@@ -17,11 +17,16 @@ import Typewriter from "typewriter-effect";
 
 //button page transition animation
 import style from './Home.scss'
+import { string } from "i/lib/util";
+
+//sections and pages
+import LoadingPage from "./LoadingPage";
+// import AboutMe from "./AboutMe";
 
 
 const Model = ({ modalPath }) => {
-  const gltf = useGLTFLoader(modalPath, true);
-  return <primitive object={gltf.scene} dispose={null} />;
+    const gltf = useGLTFLoader(modalPath, true);
+    return <primitive object={gltf.scene} dispose={null} />;
 };
 
 const Lights = () => {
@@ -40,7 +45,7 @@ const HTMLContent = ({ bgColor, domContent, children, modalPath, position, scale
 
   const ref = useRef();
   useFrame(() => (ref.current.rotation.y += 0.01));
-
+  
   const [refItem, inView] = useInView({
     threshold: 0
   });
@@ -51,7 +56,7 @@ const HTMLContent = ({ bgColor, domContent, children, modalPath, position, scale
 
   return (
     <Section factor={1.5} offset={1}>
-      <group position={[position[0], position[1], position[2]]}>
+      <group position={[position[0], position[1], position[2], position[3]]}>
         <mesh ref={ref} position={[0, 0, 0]}>
           <Model modalPath={modalPath}/>
         </mesh>
@@ -62,6 +67,7 @@ const HTMLContent = ({ bgColor, domContent, children, modalPath, position, scale
     </Section>
   );
 };
+
 
 export default function App() {
   const domContent = useRef();
@@ -76,7 +82,7 @@ export default function App() {
       <Header className={style}/>
       <Canvas colorManagement camera={{ position: [0, 0, 120], fov: 70 }}>
         <Lights />
-        <Suspense fallback={ <LoadingPage />}>
+        <Suspense fallback={<LoadingPage/>}>
         <HTMLContent domContent={domContent} modalPath={'/introModel.gltf'}
             position={[0,250,0]} scale={1} bgColor='#FBE7C6'>
             <span>
@@ -93,25 +99,41 @@ export default function App() {
               </h1>
             </span>
           </HTMLContent>
+          <HTMLContent domContent={domContent} modalPath={'/aboutMe.gltf'} scale={1} position={[0,0,0]} bgColor='#73877B'>
+            <div className='parallelText'>
+                <div className="pin-wrap">
+                    <h1 className="title">About Me</h1>
+                </div>
+              <div className="pin-wrap">
+                  <h5 className="subText" style={{fontSize: "30px"}}>Based in Taipei, Taiwan. A Music Fanatic.<br/> Started playing the guitar at 14, mainly doing alternative rock and hiphop production.<br/> Graduated from National Chengchi University in 2016 with a Bachelor degree in Management Information System.<br/> Ex-IBM because big corporate job sucks, now am a technical specialist working in the music industry.</h5>
+              </div>
+            </div>
+          </HTMLContent>
           <HTMLContent domContent={domContent} modalPath={'/cassette.gltf'}
-            position={[0,0,0]} scale={1} bgColor='#ffbe0b'>
+            position={[0,-250,0]} scale={1} bgColor='#ffbe0b'>
             <div className="VertContainer">
             <h1 className="title">Music</h1>
-            <a href='/Music' rel="noopener noreferrer" className="lineBtn">View</a>
+            <a href='/Performance' rel="noopener noreferrer" className="lineBtn">View</a>
             </div>
           </HTMLContent>
           <HTMLContent domContent={domContent} modalPath={'/programmingIcon.gltf'}
-            position={[0,-250,0]} scale={1} bgColor={'#B4F8C8'}>
+            position={[0,-500,0]} scale={1} bgColor={'#B4F8C8'}>
             <div className="VertContainer">
             <h1 className="title">Code</h1>
-            <a href='https://github.com/jeff2957?tab=repositories' target='_blank' rel="noopener noreferrer" className="lineBtn">View</a>
+            <a href='/Code' rel="noopener noreferrer" className="lineBtn">View</a>
+              <br/>
+              <br/>
+            <a href='https://github.com/jeff2957?tab=repositories' target='_blank' rel="noopener noreferrer" className="lineBtn">Other Works</a>
             </div>
           </HTMLContent>
           <HTMLContent domContent={domContent} modalPath={'/drawPen.gltf'}
-            position={[0,-500,0]} scale={1} bgColor={'#A0E7E5'}>
+            position={[0,-750,0]} scale={1} bgColor={'#A0E7E5'}>
             <div className="VertContainer">
-            <h1 className="title">Visual Design</h1>
-            <a href='https://www.behance.net/f4fdb9ac' className="lineBtn">View</a>
+            <h1 className="title">Media Design</h1>
+            <a href='/MusicP5' className="lineBtn">View</a>
+              <br/>
+              <br/>
+            <a href='https://www.behance.net/f4fdb9ac' target='_blank' rel="noopener noreferrer" className="lineBtn">Other Works</a>
             </div>
           </HTMLContent>
         </Suspense>

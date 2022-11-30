@@ -6,6 +6,9 @@ import About from "./pages/About";
 import Music from "./pages/Music";
 import Code from "./pages/Code";
 import Visual from "./pages/Visual";
+import MusicP5 from './pages/MusicP5';
+import Performance from "./pages/Performance";
+
 // import { AnimatePresence } from 'framer-motion';
 
 
@@ -22,11 +25,14 @@ function App() {
       {/* <AnimatePresence initial={false} exitBeforeEnter> */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/Portfolio" element={<Home />} />
           <Route path="/About" element={<About />} />
-          <Route path="/Music" element={<Music />} />
+          {/* <Route path="/Music" element={<Music />} /> */}
+          <Route path="/MusicP5" element={<MusicP5 />} />
           <Route path="/Visual" element={<Visual />} />
           <Route path="/Code" element={<Code />} />
+          <Route path="/Performance" element={<Performance />} />
           {/* <Route path="*" element={<ErrorPage />} /> */}
         </Routes>
       {/* </AnimatePresence> */}

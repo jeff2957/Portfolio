@@ -1,11 +1,12 @@
 import React, { Suspense, useEffect, useRef, useState } from "react";
-import { Canvas, useThree, extend, useFrame, useLoader } from "@react-three/fiber";
+import { Canvas, useThree, extend, useFrame, useLoader } from "react-three-fiber";
 import * as THREE from 'three';
 import Header from './components/header'
 import style from './Music.scss'
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { shaderMaterial } from "drei";
 import glsl from 'babel-plugin-glsl/macro';
+import LoadingPage from "./LoadingPage";
 
 const WaveShaderMaterial = shaderMaterial(
   //uniforms
@@ -119,7 +120,7 @@ const Mesh = () => {
     <mesh position={[0, 0, 0]}>
     <boxGeometry args={[20, 20, 0, 40, 25]} />
     <waveShaderMaterial uColor={"lightblue"} ref={mesh} uTexture={image}/>
-  </mesh>
+    </mesh>
   )
 }
 
@@ -147,23 +148,6 @@ const Lights = () => {
       <directionalLight position={[0, 5, 5]} intensity={0.6} />
       <directionalLight position={[10, 10, 5]} intensity={0.8} />
       {/* <spotLight position={[0 ,1000, 0]} intensity={0.2} />  */}
-    </>
-  )
-}
-
-export default function Music() {
-  
-  return (
-    <>
-    <Header className={style}/>
-    <AudioPlayer />
-    <Canvas camera={{fov: 70, position: [-1, 1, 5]}}>
-    <CameraController />
-      <Lights />
-      <Suspense fallback={null}>
-      <Mesh />
-      </Suspense>
-    </Canvas>
     </>
   )
 }
@@ -209,3 +193,21 @@ const AudioPlayer = () => {
       </>
   )
 }
+
+export default function Music() {
+  
+  return (
+    <>
+    <Header className={style}/>
+    <AudioPlayer />
+    <Canvas camera={{fov: 70, position: [-1, 1, 5]}}>
+    <CameraController />
+      <Lights />
+      <Suspense fallback={<LoadingPage/>}>
+      <Mesh />
+      </Suspense>
+    </Canvas>
+    </>
+  )
+}
+

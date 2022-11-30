@@ -5,7 +5,9 @@ export default function Header() {
   return (
     <header>
       <div className='header-inner'>
-        <div className='logo'>LU</div>
+        <div className='logo'>
+          <a href="/Home" style={{color: "white", textDecoration: "none"}}>LU</a>
+        </div>
         <nav>
           <ul>
             {/* <li>
