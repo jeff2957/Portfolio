@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import "./App.scss";
 import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Home from "./pages/Home";
@@ -13,6 +13,10 @@ import Performance from "./pages/Performance";
 
 
 function App() {
+  useEffect(() => {
+    document.title = "Lu Yen-fu";
+  }, []);
+
   return (
     <Router>
     {/* <nav>

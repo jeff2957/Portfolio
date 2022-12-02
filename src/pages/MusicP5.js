@@ -13,7 +13,7 @@ export default class MusicP5 extends Component {
     width = window.innerWidth;
 
     preload = (p5) => {
-        this.audio = p5.loadSound("/audio/rain.wav")
+        this.audio = p5.loadSound("/audio/Daylight.wav")
     }
 
     setup = (p5, parentRef) => {
@@ -28,7 +28,6 @@ export default class MusicP5 extends Component {
             }
         })
         p5.colorMode(p5.HSB, 255, 10, 100);
-        // p5.background(220);
 
         this.fft = new global.p5.FFT();
     };
@@ -145,7 +144,6 @@ export default class MusicP5 extends Component {
             x = p5.map(i, 0, spectrum.length, this.width * 5 / 6, this.width);
             p5.ellipse(x * 2/5, this.height / 3, diameter / 2, diameter / 2);
 
-            // p5.rotate((spectrum[i] * 0.0005));
         }
 
         for (let i = 0; i < spectrum.length * 3; i+=30) {
@@ -160,6 +158,7 @@ export default class MusicP5 extends Component {
             x = p5.map(i, 0, spectrum.length, this.width * 5 / 6, this.width);
             p5.ellipse(x * 4/5, this.height / 3, diameter / 2, diameter / 2);
         }
+
         //blue lower ones
         for (let i = 0; i < spectrum.length * 3; i+=30) {
             let hue = p5.map(i, 0, spectrum.length, 122, 255);
@@ -202,41 +201,3 @@ export default class MusicP5 extends Component {
 }
 
 
-// function MusicP5() {
-  
-//   const preload = p5 => {
-//     audio = p5.loadSound("audio/rain.wav")
-//   }
-
-//   const setup = (p5, canvasParentRef) => {
-//     p5.createCanvas(500, 400).parent(canvasParentRef)
-//   }
-
-//   const draw = p5 => {
-//     p5.background(255, 123, 120)
-//     p5.ellipse(100, 100 ,100)
-//   }
-
-//   function mousePressed() {
-//     if (isPressed) {
-//       this.audio.pause()
-//       isPressed = false
-//     }
-//     else {
-//       isPressed = true
-//       this.audio.loop()
-//     }
-//   }
-
-//   return (
-//     <>
-//     <Header />  
-//     <div className='container'>
-//       <h1 className='introTitle'>Some Visual Works</h1>
-//       <Sketch preload={preload} setup={setup} draw={draw}></Sketch>
-//     </div>
-//     </>  
-//   )
-// }
-
-// export default MusicP5
