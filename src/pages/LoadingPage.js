@@ -37,7 +37,7 @@ export default function LoadingPage() {
     wrapper.dataset.roundness = combination.roundness;
     
     prev = index;
-  }, 2700);
+  }, 3000);
 
   if (progress == loaded) {
     clearInterval(timeId);
