@@ -88,7 +88,7 @@ export default function App() {
             <span>
               <h1 className="introTitle">Hi, I am</h1>
               {/* <h1 className="introTitle">LU YEN-FU</h1> */}
-              <h1 className="introTitle">
+              <h1 className="typeTitle">
                 <Typewriter
                   options={{
                     strings: ['LU YEN-FU', 'A Beatmaker', 'A Developer', 'A Media Designer'],
@@ -105,7 +105,7 @@ export default function App() {
                     <h1 className="title">About Me</h1>
                 </div>
               <div className="pin-wrap">
-                  <h5 className="subText" style={{fontSize: "30px"}}>Based in Taipei, Taiwan. A Music Fanatic, Developer, and Interactive Graphic Artist.<br/> Started playing guitar at 14, mainly doing alternative rock and hiphop production.<br/> Graduated from National Chengchi University in 2016 with a Bachelor degree in Management Information Systems.<br/> Ex-IBM, now am a technical specialist working in the entertainment industry.</h5>
+                  <h5 className="subText">Based in Taipei, Taiwan. A Music Fanatic, Developer, and Interactive Graphic Artist.<br/> Started playing guitar at 14, mainly doing alternative rock and hiphop production.<br/> Graduated from National Chengchi University in 2016 with a Bachelor degree in Management Information Systems.<br/> Ex-IBM, now am a technical specialist working in the entertainment industry.</h5>
               </div>
             </div>
           </HTMLContent>

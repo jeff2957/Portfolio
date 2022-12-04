@@ -1,3 +1,27 @@
 // .performContainer {
 //     background: linear-gradient(157deg, rgba(28,28,28,1) 0%, rgba(74,73,73,1) 76%, rgba(110,109,109,1) 99%, rgba(171,171,171,1) 100%);
 // }
+
+.frame {
+    max-height: 100vh;
+    min-height: 50vh;
+    height: auto;
+    max-width: 100vw;
+    min-width: 80vw;
+    width: auto;
+}
+
+.descrp {
+    font-size: 1.5rem;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    span {
+      display: inline-block;
+      text-align: left;
+    }
+    @media (min-width: 640px) {
+      font-size: 3rem;
+    }
+}

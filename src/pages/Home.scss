@@ -57,7 +57,7 @@
     position: absolute;
     z-index: 99;
     width: 100%;
-    padding: 60px;
+    padding: 50px;
     .header-inner {
       display: flex;
       align-items: center;
@@ -74,14 +74,14 @@
           display: flex;
           li {
             list-style: none;
-            margin: 0 60px;
+            // margin: 0 0;
             &.btn {
               a {
                 color: #fff;
                 font-weight: 600;
                 background: #23232a;
                 padding: 16px 24px;
-                border-radius: 10px;
+                border-radius: 14px;
               }
             }
             a {
@@ -97,7 +97,7 @@
   
   
   .introTitle {
-    font-size: 10rem;
+    font-size: 4rem;
     text-align: left;
     width: 100%;
     margin: 0 auto;
@@ -106,13 +106,28 @@
       display: inline-block;
       text-align: left;
     }
-    @media (max-width: 1440px) {
+    @media (min-width: 640px) {
+      font-size: 6rem;
+    }
+  }
+
+  .typeTitle {
+    font-size: 3rem;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    color: #fff;
+    span {
+      display: inline-block;
+      text-align: left;
+    }
+    @media (min-width: 640px) {
       font-size: 6rem;
     }
   }
   
   .title {
-    font-size: 10rem;
+    font-size: 4rem;
     text-align: center;
     width: 100%;
     margin: 0 auto;
@@ -120,13 +135,13 @@
     span {
       display: block;
     }
-    @media (max-width: 1440px) {
+    @media (min-width: 640px) {
       font-size: 6rem;
     }
   }
   
   .subText {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     width: 100%;
     margin: 0 auto;
@@ -134,8 +149,8 @@
     span {
       display: block;
     }
-    @media (max-width: 1440px) {
-      font-size: 1rem;
+    @media (min-width: 640px) {
+      font-size: 2rem;
     }
   }
   
