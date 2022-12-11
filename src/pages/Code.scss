@@ -46,89 +46,94 @@ body {
 
   .uiGuide {
     // background-image: url("https://res.cloudinary.com/dlczspjro/image/upload/v1669555713/Group_108_ndj8pd.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: -10px;
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    display: grid;
-    align-items: flex-end;
-    justify-items: center;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // top: -10px;
+    // height: 100vh;
+    // width: 100vw;
+    // position: fixed;
+    // display: grid;
+    // align-items: flex-end;
+    // justify-items: center;
     z-index: 1;
     overflow: auto;
     overflow-x: hidden;
   }
 
+  .btnEffct {
+    text-decoration: none;
+    color: white;
+  }
+
   .uiBtn {
-    color: #fff;
+    width: 10vw;
+    text-align: center;
     font-weight: 200;
     font-size: 1rem;
     background: #23232a;
-    position: relative;
     padding: 16px 28px;
     border-radius: 50px;
     text-decoration: none;
     z-index: 2;
     margin-bottom: 50px;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    position: relative;
+    top: 5vh;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // -ms-transform: translate(-50%, -50%);
 }
 
   .uiBtn2 {
-    color: #fff;
+    width: 10vw;
+    text-align: center;
     font-weight: 200;
     font-size: 1rem;
     background: #23232a;
-    position: relative;
     padding: 16px 28px;
     border-radius: 50px;
     text-decoration: none;
     z-index: 2;
     margin-bottom: 50px;
-    position: absolute;
-    top: 215%;
+    position: relative;
+    top: -30vh;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
 
   .uiBtn3 {
-    color: #fff;
+    width: 8vw;
+    text-align: center;
     font-weight: 200;
     font-size: 1rem;
-    background: #7e7e86;
-    position: relative;
+    background: #23232a;
     padding: 16px 28px;
     border-radius: 50px;
     text-decoration: none;
     z-index: 2;
     margin-bottom: 50px;
-    position: absolute;
-    top: 225%;
-    left: 42%;
+    position: relative;
+    top: -35vh;
+    // left: 40%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 } 
 
 .uiBtn4 {
-    color: #fff;
-    font-weight: 200;
-    font-size: 1rem;
-    background: #7e7e86;
-    position: relative;
-    padding: 16px 28px;
-    border-radius: 50px;
-    text-decoration: none;
-    z-index: 2;
-    margin-bottom: 50px;
-    position: absolute;
-    top: 225%;
-    left: 58%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+  width: 8vw;
+  text-align: center;
+  font-weight: 200;
+  font-size: 1rem;
+  background: #23232a;
+  padding: 16px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  z-index: 2;
+  margin-bottom: 50px;
+  position: relative;
+  top: -35vh;
+  left: 8%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 } 

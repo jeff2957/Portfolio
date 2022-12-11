@@ -64,7 +64,7 @@ export default function LoadingPage() {
       </div> */}
       {/* <h1 className='loadingText'>{ progress.toFixed(1) }% loaded</h1> */}
     </div>
-    <h1 className='cautionDescrp' style={{backgroundColor: 'black', color: 'white', paddingBottom: '10vh', marginTop: 0, border: 'none'}}>please use laptop for better browsing experience</h1>
+    <h1 className='cautionDescrp' style={{backgroundColor: 'black', color: 'white', paddingBottom: '10vh', marginTop: 0, border: 'none'}}>please use desktop for better browsing experience</h1>
       {/* <div>
         <h1 className='loadingText'>{ progress.toFixed(1) }% loaded</h1>
       </div> */}

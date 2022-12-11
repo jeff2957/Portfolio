@@ -8,6 +8,7 @@ import Code from "./pages/Code";
 import Visual from "./pages/Visual";
 import MusicP5 from './pages/MusicP5';
 import Performance from "./pages/Performance";
+import NewCode from './pages/NewCode';
 
 // import { AnimatePresence } from 'framer-motion';
 
@@ -35,7 +36,7 @@ function App() {
           {/* <Route path="/Music" element={<Music />} /> */}
           <Route path="/MusicP5" element={<MusicP5 />} />
           <Route path="/Visual" element={<Visual />} />
-          <Route path="/Code" element={<Code />} />
+          <Route path="/Code" element={<NewCode />} />
           <Route path="/Performance" element={<Performance />} />
           {/* <Route path="*" element={<ErrorPage />} /> */}
         </Routes>
