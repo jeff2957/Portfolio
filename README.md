@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-This is LU YEN FU's Portfolio website made with react-three-fiber, p5.js, and blender(3d modeling).
+This is Yen-fu Lu's Portfolio website made with react-three-fiber, p5.js, and blender(3d modeling).
 
 See live demo here: https://luyenfu.com
 
