@@ -1,0 +1,83 @@
+.photo-body {
+    width: 100%;
+    overscroll-behavior: none; 
+    min-height: 300vh;
+}
+
+.yearText {
+    position: fixed;
+    color: white;
+    padding-left: 15px;
+    z-index: 4;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #faefd2;
+}
+
+.gallery {
+    height: 200vh;
+}
+
+.gallery-pic {
+    width: 100%;
+    height: 500%;
+    position: relative;
+    background-size: contain;
+    z-index: 2;
+
+    &:nth-of-type(1) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/aa.JPG');}
+    &:nth-of-type(2) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/bb.JPG');}
+    &:nth-of-type(3) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/cc.JPG');}
+    &:nth-of-type(4) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/dd.JPG');}
+    &:nth-of-type(5) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/ee.JPG');}
+    &:nth-of-type(6) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/ff.JPG');}
+    &:nth-of-type(7) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/gg.JPG');}
+    &:nth-of-type(8) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/hh.JPG');}
+    &:nth-of-type(9) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/ii.JPG');}
+    &:nth-of-type(10) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/jj.JPG');}
+    &:nth-of-type(11) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/kk.JPG');}
+    &:nth-of-type(12) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/ll.JPG');}
+    &:nth-of-type(13) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/zz.JPG');}
+    &:nth-of-type(14) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/nn.JPG');}
+    &:nth-of-type(15) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/pp.JPG');}
+    &:nth-of-type(16) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/qq.JPG');}
+    &:nth-of-type(17) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/rr.JPG');}
+    &:nth-of-type(18) {background-image: url('https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/ss.JPG');}
+
+
+    // &:nth-of-type(1) {background-image: url('/pic/aa.JPG');}
+    // &:nth-of-type(2) {background-image: url('/pic/bb.JPG');}
+    // &:nth-of-type(3) {background-image: url('/pic/cc_2.jpg');}
+    // &:nth-of-type(4) {background-image: url('/pic/dd.JPG');}
+    // &:nth-of-type(5) {background-image: url('/pic/ee_2.JPG');}
+    // &:nth-of-type(6) {background-image: url('/pic/ff.JPG');}
+    // &:nth-of-type(7) {background-image: url('/pic/gg.JPG');}
+    // &:nth-of-type(8) {background-image: url('/pic/hh.JPG');}
+    // &:nth-of-type(9) {background-image: url('/pic/ii.JPG');}
+    // &:nth-of-type(10) {background-image: url('/pic/jj.JPG');}
+    // &:nth-of-type(11) {background-image: url('/pic/kk.JPG');}
+    // &:nth-of-type(12) {background-image: url('/pic/ll.JPG');}
+
+
+
+    &:before {
+        content: '';
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        // border-right: 1px solid black;
+    }
+}
+
+.line {
+    border-right: 1px solid black;
+    height: 300vh;
+}

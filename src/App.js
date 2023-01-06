@@ -9,6 +9,7 @@ import Visual from "./pages/Visual";
 import MusicP5 from './pages/MusicP5';
 import Performance from "./pages/Performance";
 import NewCode from './pages/NewCode';
+import Photo from './pages/Photo';
 
 // import { AnimatePresence } from 'framer-motion';
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/Visual" element={<Visual />} />
           <Route path="/Code" element={<NewCode />} />
           <Route path="/Performance" element={<Performance />} />
+          <Route path="/Photo" element={<Photo />} />
           {/* <Route path="*" element={<ErrorPage />} /> */}
         </Routes>
       {/* </AnimatePresence> */}
