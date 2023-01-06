@@ -60,7 +60,7 @@ function Photo() {
         })
         .to('.gallery-pic', {
             stagger: .08,
-            y: -1500,
+            y: -800,
             // scrub: true
         })
     }, []);
