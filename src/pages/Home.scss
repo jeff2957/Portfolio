@@ -265,11 +265,11 @@
     position: relative;
     z-index: calc(1 + var(--add)*2);
     display: inline-block;
-    font-size: 45px;
+    font-size: 2.5vw;
     text-align: center;
-    font-weight: calc(200 + 700 * var(--add));
+    font-weight: calc(300 + 700 * var(--add));
     font-stretch: calc(100% + (25 / var(--add)));
-    color: hsl(360, 100%, calc(100% - 15% * var(--add)));
+    color: hsl(360, 100%, calc(100% - 25% * var(--add)));
     // transition: {
       transition-duration: 0.2s, 0.2s, 0.2s, 0.2s;
       transition-timing-function: ease, ease, ease, ease;

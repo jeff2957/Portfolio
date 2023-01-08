@@ -277,7 +277,7 @@ export default class MusicP5 extends Component {
               pointerEvents: 'none'
             }}
           >
-            <h1 style={{position: "absolute", left: "5vw", fontSize: '5vw', color: 'white'}}>DAYLIGHT</h1>
+            <h1 className="p5Song" style={{position: "absolute", left: "5vw", color: 'white'}}>DAYLIGHT</h1>
             <h1 id="hintText" style={{ color: 'white', paddingTop: "70vh", paddingLeft: '10px', fontWeight: 'lighter'}}>click to play</h1>
           </div>
           <Sketch

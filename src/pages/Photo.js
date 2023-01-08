@@ -30,6 +30,24 @@ import { useEffect, useRef } from "react";
 //     )
 // }
 
+const images = [
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/aa.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/bb.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/cc.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/dd.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/ee.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/ff.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/gg.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/hh.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/ii.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/jj.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/kk.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/ll.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/mm.JPG',
+    'https://lkvwxrfoecqeujvtjkym.supabase.co/storage/v1/object/public/portfolio-gallery/nn.JPG'
+    
+]
+
 function Photo() {
 
     const imgRef = useRef(null);
@@ -98,6 +116,15 @@ function Photo() {
         <div className='gallery-pic'></div>
         <div className='gallery-pic'></div>
         <div className='gallery-pic'></div>
+        {/* <div className='gallery-pic'></div>
+        <div className='gallery-pic'></div>
+        <div className='gallery-pic'></div>
+        <div className='gallery-pic'></div>
+        <div className='gallery-pic'></div>
+        <div className='gallery-pic'></div>
+        <div className='gallery-pic'></div>
+        <div className='gallery-pic'></div>
+        <div className='gallery-pic'></div> */}
     </section>
     {/* <section>
         <GetImage />
